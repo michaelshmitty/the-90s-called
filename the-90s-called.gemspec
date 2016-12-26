@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "the-90s-called"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["shmitty"]
   spec.email         = ["root@hacktheplanet.be"]
 
-  spec.summary       = "A *very* basic back to the 90s vanilla HTML theme."
+  spec.summary       = "The 90s called is a *very* basic vanilla HTML theme for Jekyll"
   spec.homepage      = "https://github.com/michaelshmitty/the-90s-called"
   spec.license       = "MIT"
 
