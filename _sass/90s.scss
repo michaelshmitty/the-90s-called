@@ -1,0 +1,21 @@
+// Define defaults for each variable.
+$spacing-unit:     30px !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials.
+@import
+  "90s/base",
+  "90s/layout",
+  "90s/syntax-highlighting"
+;
