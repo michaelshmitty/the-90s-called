@@ -2,11 +2,23 @@
   <div class="wrapper">
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
     <p><em>{{ site.description | escape }}</em></p>
-    {% if site.author %}
-      <br>{{ site.author | escape }}
-    {% endif %}
-    {% if site.email %}
-      <br><a href="mailto:{{ site.email }}">{{ site.email }}
-    {% endif %}
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+            {% if site.author %}
+              <br>{{ site.author | escape }}
+            {% endif %}
+            {% if site.email %}
+              | <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p style="text-align: right;">Last updated {{ site.time | date_to_long_string }}</p>
+      </div>
+    </div>
   </div>
 </footer>
